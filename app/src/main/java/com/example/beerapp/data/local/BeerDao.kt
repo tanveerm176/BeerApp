@@ -30,5 +30,5 @@ interface BeerDao {
      * clears cache from database
      */
     @Query("DELETE FROM beerentity")
-    suspend fun clearAll()
+    suspend fun clearAll(): Unit
 }
